@@ -3,8 +3,9 @@ import { BrowserRouter } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material";
 
 import "./MuiClassNameSetup";
-import MarketingApp from "./components/MarketingApp";
+import AuthApp from "./components/AuthApp";
 import Header from "./components/Header";
+import MarketingApp from "./components/MarketingApp";
 
 export default () => {
   return (
@@ -12,7 +13,8 @@ export default () => {
       <StyledEngineProvider>
         <div>
           <Header />
-          <MarketingApp />;
+          <MarketingApp />
+          <AuthApp />
         </div>
       </StyledEngineProvider>
     </BrowserRouter>
